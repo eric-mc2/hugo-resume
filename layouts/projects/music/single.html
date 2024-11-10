@@ -1,0 +1,14 @@
+{{ define "main" }}
+<!-- {{ partial "breadcrumbs" . }} -->
+<section class="resume-section p-3 p-lg-5 d-flex d-column">
+  <div class="my-auto">
+    THIS IS THEMUSIC THING
+    <img src="{{ .Params.image }}" class="mx-auto"/>
+    <h2 class="mb-0"><span class="text-primary">{{ .Title }}</span></h2>
+    <div class="subheading"> {{ .Params.musician }}, {{ .Params.album }} </div>
+    {{ .Content }}
+    <p>Reference recording: <a href="{{ .Params.link }}">on {{ .Params.linkdest }}</a> (starts at {{ .Params.starttime}}) </p>
+    <!-- {{ partial "techtags" . }} -->
+  </div>
+</section>
+{{ end }}
